@@ -174,7 +174,7 @@ Message: ${form.message}`
     );
 
     window.location.href =
-      `mailto:raju.hariyam@gmail.com?subject=${subject}&body=${body}`;
+      `mailto:cpraju.hariyam@gmail.com?subject=${subject}&body=${body}`;
 
     setSubmitted(true);
   };
@@ -187,8 +187,8 @@ Message: ${form.message}`
           <span>Hari Yarn Trading Co. & Associates</span>
 
           <div>
-            <a href="mailto:raju.hariyam@gmail.com">
-              raju.hariyam@gmail.com
+            <a href="mailto:cpraju.hariyam@gmail.com">
+              cpraju.hariyam@gmail.com
             </a>
             <span className="top-sep">|</span>
             <a href="https://hytcoyarns.in" target="_blank" rel="noreferrer">
@@ -552,8 +552,8 @@ Message: ${form.message}`
               <Mail />
               <div>
                 <span>Email</span>
-                <a href="mailto:raju.hariyam@gmail.com">
-                  raju.hariyam@gmail.com
+                <a href="mailto:cpraju.hariyam@gmail.com">
+                  cpraju.hariyam@gmail.com
                 </a>
               </div>
             </div>
@@ -581,7 +581,7 @@ Message: ${form.message}`
 
             <a
               className="whatsapp-link"
-              href="mailto:raju.hariyam@gmail.com"
+              href="mailto:cpraju.hariyam@gmail.com"
             >
               <MessageCircle size={19} />
               Contact Us By Email
@@ -704,7 +704,7 @@ Message: ${form.message}`
               <a href="tel:+919121076085">+91 9121076085</a>
             </p>
             <p>
-              <a href="mailto:raju.hariyam@gmail.com">raju.hariyam@gmail.com</a>
+              <a href="mailto:cpraju.hariyam@gmail.com">cpraju.hariyam@gmail.com</a>
               <br />
               <a href="mailto:cpramesh.hariyarn@gmail.com">cpramesh.hariyarn@gmail.com</a>
             </p>
