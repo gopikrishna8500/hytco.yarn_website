@@ -174,7 +174,7 @@ Message: ${form.message}`
     );
 
     window.location.href =
-      `mailto:cpraju.hariyam@gmail.com?subject=${subject}&body=${body}`;
+      `mailto:raju.hariyarn@gmail.com?subject=${subject}&body=${body}`;
 
     setSubmitted(true);
   };
@@ -184,11 +184,15 @@ Message: ${form.message}`
       {/* TOP BAR */}
       <div className="topline">
         <div className="container topline-inner">
-          <span>Hari Yarn Trading Co. & Associates</span>
+          <span>Hari Yarn Trading Co. Raju & Associates</span>
 
           <div>
-            <a href="mailto:cpraju.hariyam@gmail.com">
-              cpraju.hariyam@gmail.com
+            <a href="mailto:raju.hariyarn@gmail.com">
+              raju.hariyarn@gmail.com
+            </a>
+            <span className="top-sep">|</span>
+            <a href="mailto:cpramesh.hariyarn@gmail.com">
+              cpramesh.hariyarn@gmail.com
             </a>
             <span className="top-sep">|</span>
             <a href="https://hytcoyarns.in" target="_blank" rel="noreferrer">
@@ -552,14 +556,24 @@ Message: ${form.message}`
               <Mail />
               <div>
                 <span>Email</span>
-                <a href="mailto:cpraju.hariyam@gmail.com">
-                  cpraju.hariyam@gmail.com
+                <a href="mailto:cpramesh.hariyam@gmail.com">
+                  cpramesh.hariyam@gmail.com
+                </a>
+                <a href="mailto:raju.hariyam@gmail.com">
+                  raju.hariyam@gmail.com
                 </a>
               </div>
             </div>
+            
 
             <div className="contact-detail">
               <Phone />
+               <div>
+                <span>Telephone</span>
+                <a href="tel:+27804808">27804808</a>
+                <a href="tel:+27710526">27710526</a>
+                 <a href="tel:+27802924">27802924</a>
+              </div>
               <div>
                 <span>Phone</span>
                 <a href="tel:+919848012924">+91 9848012924</a>
@@ -572,7 +586,7 @@ Message: ${form.message}`
               <div>
                 <span>Head Office</span>
                 <p>
-                  4-6-178 to 192, 1942 Panbazar,
+                  Address:  1942 Panbazar,
                   Veeramani Arcade, 4th Floor,
                   Secunderabad – 500003, Telangana.
                 </p>
@@ -581,7 +595,7 @@ Message: ${form.message}`
 
             <a
               className="whatsapp-link"
-              href="mailto:cpraju.hariyam@gmail.com"
+              href="mailto:cpramesh.hariyam@gmail.com"
             >
               <MessageCircle size={19} />
               Contact Us By Email
@@ -668,21 +682,31 @@ Message: ${form.message}`
       {/* FOOTER */}
 
 
+      {/* FOOTER */}
       <footer className="footer">
         <div className="footer-content">
 
+          {/* COMPANY BRAND */}
           <div className="footer-brand">
-            <img src="/hytco-logo.jpg" alt="Hari Yarn Trading Co." className="footer-logo" />
+            <img
+              src="/hytco-logo.jpg"
+              alt="Hari Yarn Trading Co."
+              className="footer-logo"
+            />
+
             <h3>Hari Yarn Trading Co. & Associates</h3>
+
             <p>
-              Trusted yarn sourcing partner with 35 years of experience
-              serving the textile industry.
+              Trusted yarn sourcing partner with 40 years of
+              experience serving the textile industry.
             </p>
+
             <a href="https://hytcoyarns.in" target="_blank" rel="noreferrer">
               www.hytcoyarns.in
             </a>
           </div>
 
+          {/* QUICK LINKS */}
           <div className="footer-links">
             <h4>Quick Links</h4>
             <a href="#home">Home</a>
@@ -692,34 +716,77 @@ Message: ${form.message}`
             <a href="#contact">Contact Us</a>
           </div>
 
+          {/* CONTACT DETAILS */}
           <div className="footer-contact">
-            <h4>Contact</h4>
-            <p>
-              4-6-178 to 192, 1942 Panbazar, Veeramani Arcade,
-              4th Floor, Secunderabad – 500003, Telangana.
+            <h3>Contact Us</h3>
+
+            <h4>HARI YARN TRADING COMPANY</h4>
+            <h4> (An ISO 9001:2015 Certified Company)</h4>
+
+
+            <p className="footer-address">
+              <strong>Address:</strong> 1942, Pan Bazar, Veeramani Arcade,
+              4th Floor, Secunderabad - 500 003, Telangana.
             </p>
-            <p>
-              <a href="tel:+919848012924">+91 9848012924</a>
-              <span className="footer-separator"> | </span>
-              <a href="tel:+919121076085">+91 9121076085</a>
+
+            <div className="footer-detail">
+              <strong>Office Telephone:</strong>
+              <div className="footer-inline">
+                <a href="tel:27804808">27804808</a>
+                <span className="footer-separator"> | </span>
+                <a href="tel:27710526">27710526</a>
+                <span className="footer-separator"> | </span>
+                <a href="tel:27802924">27802924</a>
+              </div>
+            </div>
+
+            <div className="footer-detail">
+              <strong>Mobile:</strong>
+              <div className="footer-inline">
+                <a href="tel:+919848012924">+91 9848012924</a>
+                <span className="footer-separator"> | </span>
+                <a href="tel:+919121076085">+91 9121076085</a>
+              </div>
+            </div>
+
+            <div className="footer-detail">
+              <strong>Email:</strong>
+              <div className="footer-email">
+                <a href="mailto:raju.hariyarn@gmail.com">
+                  raju.hariyarn@gmail.com
+                </a>
+                <span className="footer-separator"> | </span>
+                <a href="mailto:cpramesh.hariyarn@gmail.com">
+                  cpramesh.hariyarn@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <p className="footer-extra">
+              <strong>Website:</strong> hytcoyarns.in
             </p>
-            <p>
-              <a href="mailto:cpraju.hariyam@gmail.com">cpraju.hariyam@gmail.com</a>
-              <br />
-              <a href="mailto:cpramesh.hariyarn@gmail.com">cpramesh.hariyarn@gmail.com</a>
+            <p className="footer-extra">
+              <strong>Branches:</strong> Ichalkaranji <span className="footer-separator"> | </span> Guntur  <span className="footer-separator"> | </span> Tamilnadu
+            </p>
+
+            <p className="footer-extra">
+              <strong>GSTIN:</strong> 36AACHA7733C1ZP
             </p>
           </div>
 
         </div>
 
+        {/* FOOTER BOTTOM */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Hari Yarn Trading Co. All Rights Reserved.</p>
           <p>
-            Designed & Developed by <strong>Ideal Path Software Solutions</strong>
+            © {new Date().getFullYear()} Hari Yarn Trading Co. All Rights Reserved.
+          </p>
+
+          <p>
+            Designed & Developed by <strong>Harshaa Software Pvt Ltd</strong>
           </p>
         </div>
       </footer>
-
 
     </>
   );
