@@ -694,7 +694,7 @@ Message: ${form.message}`
               className="footer-logo"
             />
 
-            <h3>Hari Yarn Trading Co. & Associates</h3>
+            <h3>Hari Yarn Trading Co. Raju & Associates</h3>
 
             <p>
               Trusted yarn sourcing partner with 40 years of
