@@ -209,7 +209,8 @@ Message: ${form.message}`
             <img src="/hytco-logo.jpg" alt="HYTCO Logo" />
             <span>
               <strong>HYTCO</strong>
-              <small>Hari Yarn Trading Co.</small>
+              <small>Hari Yarn Trading Co. Raju & Associates</small>
+              <small className="brand-proprietor">Raju Addagatla | Proprietor</small>
             </span>
           </a>
 
@@ -249,9 +250,8 @@ Message: ${form.message}`
             <em>Yarns</em> With Possibilities.
           </h1>
 
-          <p className="hero-description">
-            Your trusted partner for dependable yarn sourcing,
-            textile solutions and long-term business relationships.
+          <p className="hero-description hero-tagline">
+            “Just knock at HYTCO – you can surely get what you want any type, any blend OR any Creation”
           </p>
 
           <div className="hero-buttons">
@@ -507,6 +507,16 @@ Message: ${form.message}`
             before publishing certification claims.
           </p>
         </div>
+
+        <div className="container certification-logos">
+          <h3>Certifications &amp; Standards</h3>
+          <p>Our certification and standards logos</p>
+          <img
+            src="/images/hytco-certifications.png"
+            alt="HYTCO certification and standards logos including GOTS, Organic Blended, Recycled Blended, PRIMARK, OEKO-TEX, Kasturi Bharat, BCI, Global Recycled Standard, INDITEX, regenagri and ISO 9001:2015"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       {/* NETWORK */}
@@ -556,11 +566,11 @@ Message: ${form.message}`
               <Mail />
               <div>
                 <span>Email</span>
-                <a href="mailto:cpramesh.hariyam@gmail.com">
-                  cpramesh.hariyam@gmail.com
+                <a href="mailto:cpramesh.hariyarn@gmail.com">
+                  cpramesh.hariyarn@gmail.com
                 </a>
-                <a href="mailto:raju.hariyam@gmail.com">
-                  raju.hariyam@gmail.com
+                <a href="mailto:raju.hariyarn@gmail.com">
+                  raju.hariyarn@gmail.com
                 </a>
               </div>
             </div>
@@ -595,7 +605,7 @@ Message: ${form.message}`
 
             <a
               className="whatsapp-link"
-              href="mailto:cpramesh.hariyam@gmail.com"
+              href="mailto:cpramesh.hariyarn@gmail.com"
             >
               <MessageCircle size={19} />
               Contact Us By Email
@@ -694,7 +704,8 @@ Message: ${form.message}`
               className="footer-logo"
             />
 
-            <h3>Hari Yarn Trading Co. Raju & Associates</h3>
+            <h3>Hari Yarn Trading Co. Raju &amp; Associates</h3>
+            <p className="footer-proprietor">Raju Addagatla | Proprietor</p>
 
             <p>
               Trusted yarn sourcing partner with 40 years of

@@ -1611,3 +1611,68 @@ h1, h2, h3, h4, h5, h6 {
     column-gap: 7px;
   }
 }
+/* =========================================
+   HYTCO OWNER, TAGLINE & CERTIFICATION LOGOS
+   ========================================= */
+
+.brand-proprietor {
+  margin-top: 3px;
+  color: #8b744b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hero-tagline {
+  max-width: 760px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.footer-proprietor {
+  color: #e5c77a !important;
+  font-weight: 700;
+  margin: -3px 0 8px !important;
+}
+
+.certification-logos {
+  margin-top: 30px;
+  padding: 25px 0 5px;
+  text-align: center;
+}
+
+.certification-logos h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 0 5px;
+}
+
+.certification-logos p {
+  color: #d5dfda;
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.certification-logos img {
+  display: block;
+  width: 100%;
+  max-width: 1014px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .hero-tagline {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .certification-logos {
+    padding-top: 18px;
+  }
+
+  .certification-logos h3 {
+    font-size: 20px;
+  }
+}
