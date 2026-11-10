@@ -22,87 +22,187 @@ import "./App.css";
 
 const products = [
   {
-    no: "01",
-    title: "Sustainable Yarns",
-    category: "Sustainable",
-    desc: "Thoughtfully sourced fibres for businesses building a more responsible textile future.",
-    tags: "Organic · Recycled · Natural fibres",
-    icon: Leaf,
-    image: "https://revolutionfibers.com/cdn/shop/files/lofty-8-4-cotton-yarn-10-color-cone-transparent-background.png?v=1746585805&width=2048"
-  },
-  {
-    no: "02",
-    title: "Fancy Yarns",
-    category: "Fancy",
-    desc: "Distinctive textures and yarn effects to bring creativity and character to every collection.",
-    tags: "Slub · Melange · Special effects",
-    icon: Sparkles,
-    image: "https://www.merserizeiplik.com/resimler/baslik/1-webp-1669980211.393001.jpg"
-  },
-  {
-    no: "03",
-    title: "Blended Yarns",
-    category: "Blended",
-    desc: "Versatile fibre combinations designed to balance performance, comfort and value.",
-    tags: "Polyester viscose · Modal blends",
-    icon: Factory,
+    no: "01", title: "Cotton Yarns", category: "Cotton",
+    desc: "Versatile cotton yarn options for weaving, knitting and a wide range of textile applications.",
+    tags: "Carded · Combed · Compact", icon: Leaf,
     image: "https://images.squarespace-cdn.com/content/v1/67f5d3c8e1507762e95ea8e4/62a687d7-cb76-4f8d-a7e4-ead19651a272/8-4-cotton-cone-weaving-yarn%2B%282%29.jpg"
   },
   {
-    no: "04",
-    title: "Combed, Gassed & Mercerised",
-    category: "Speciality",
-    desc: "Refined yarn options selected for a smoother finish, enhanced lustre and dependable quality.",
-    tags: "Combed cotton · Gassed · Mercerised",
-    icon: ShieldCheck,
+    no: "02", title: "Spandex Yarns", category: "Speciality",
+    desc: "Stretch yarn options designed to add flexibility, comfort and shape retention to fabrics.",
+    tags: "Stretch · Elasticity · Performance", icon: CheckCircle2,
     image: "https://muzteks.com/Content/images/2022/4/20/401-penye-compact-67d184aa.jpg"
   },
   {
-    no: "05",
-    title: "Premium Cotton Yarns",
-    category: "Premium Cotton",
-    desc: "Premium long-staple cotton options for high-end applications and discerning buyers.",
-    tags: "Pima · Giza · Ultima",
-    icon: Globe2,
+    no: "03", title: "Dyed & Melange Yarns", category: "Fancy",
+    desc: "Colour-rich and blended-effect yarns to create distinctive looks and textile character.",
+    tags: "Dyed yarn · Melange · Colour effects", icon: Sparkles,
+    image: "https://www.merserizeiplik.com/resimler/baslik/1-webp-1669980211.393001.jpg"
+  },
+  {
+    no: "04", title: "Open-End (OE) Yarns", category: "Cotton",
+    desc: "Open-end yarn options for dependable performance across suitable textile applications.",
+    tags: "OE cotton · Weaving · Knitting", icon: Factory,
+    image: "https://revolutionfibers.com/cdn/shop/files/lofty-8-4-cotton-yarn-10-color-cone-transparent-background.png?v=1746585805&width=2048"
+  },
+  {
+    no: "05", title: "Eli-Twist Yarns", category: "Speciality",
+    desc: "Specialist twisted yarn options for customers seeking strength and consistent yarn structure.",
+    tags: "Twist construction · Speciality", icon: ShieldCheck,
     image: "https://threadcollective.com.au/cdn/shop/products/ashfordunmercerisedcottton.png?crop=center&height=1577&v=1680230767&width=1577"
   },
   {
-    no: "06",
-    title: "High-End Application Yarns",
-    category: "Speciality",
-    desc: "Speciality yarn sourcing to support demanding applications and premium textile products.",
-    tags: "Core spun · Eli-twist · Ply",
-    icon: CheckCircle2,
+    no: "06", title: "Gassed Yarns", category: "Speciality",
+    desc: "Yarns with a refined surface finish for applications where a cleaner appearance is desired.",
+    tags: "Smooth finish · Refined surface", icon: CheckCircle2,
+    image: "https://muzteks.com/Content/images/2022/4/20/401-penye-compact-67d184aa.jpg"
+  },
+  {
+    no: "07", title: "Dye Package Yarns", category: "Speciality",
+    desc: "Yarn options prepared for package dyeing requirements and colour-focused production.",
+    tags: "Package dyeing · Colour processing", icon: Globe2,
+    image: "https://revolutionfibers.com/cdn/shop/files/lofty-8-4-cotton-yarn-10-color-cone-transparent-background.png?v=1746585805&width=2048"
+  },
+  {
+    no: "08", title: "Slub Yarns", category: "Fancy",
+    desc: "Textured yarns with intentional thick-and-thin effects for distinctive fabric surfaces.",
+    tags: "Textured · Slub effects · Fashion fabrics", icon: Sparkles,
+    image: "https://www.merserizeiplik.com/resimler/baslik/1-webp-1669980211.393001.jpg"
+  },
+  {
+    no: "09", title: "Ply Yarns", category: "Speciality",
+    desc: "Ply yarn options created by combining strands to suit different fabric and end-use needs.",
+    tags: "Two-ply · Multi-ply · Textile use", icon: Factory,
     image: "https://images.squarespace-cdn.com/content/v1/67f5d3c8e1507762e95ea8e4/62a687d7-cb76-4f8d-a7e4-ead19651a272/8-4-cotton-cone-weaving-yarn%2B%282%29.jpg"
+  },
+  {
+    no: "10", title: "Sustainable Yarns", category: "Sustainable",
+    desc: "Thoughtfully sourced fibre options for businesses working towards more responsible textiles.",
+    tags: "Organic · Recycled · Responsible fibres", icon: Leaf,
+    image: "https://revolutionfibers.com/cdn/shop/files/lofty-8-4-cotton-yarn-10-color-cone-transparent-background.png?v=1746585805&width=2048"
+  },
+  {
+    no: "11", title: "Fancy Yarns", category: "Fancy",
+    desc: "Creative yarn constructions and surface effects to bring individuality to fabric collections.",
+    tags: "Slub · Melange · Special effects", icon: Sparkles,
+    image: "https://www.merserizeiplik.com/resimler/baslik/1-webp-1669980211.393001.jpg"
+  },
+  {
+    no: "12", title: "Blended Yarns", category: "Blended",
+    desc: "Fibre combinations selected to balance comfort, appearance and performance requirements.",
+    tags: "Cotton blends · Polyester blends · Modal blends", icon: Factory,
+    image: "https://images.squarespace-cdn.com/content/v1/67f5d3c8e1507762e95ea8e4/62a687d7-cb76-4f8d-a7e4-ead19651a272/8-4-cotton-cone-weaving-yarn%2B%282%29.jpg"
+  },
+  {
+    no: "13", title: "Combed, Gassed & Mercerised Yarns", category: "Speciality",
+    desc: "Refined yarn choices offering a smoother surface and enhanced appearance for selected applications.",
+    tags: "Combed cotton · Gassed · Mercerised", icon: ShieldCheck,
+    image: "https://muzteks.com/Content/images/2022/4/20/401-penye-compact-67d184aa.jpg"
+  },
+  {
+    no: "14", title: "Pima, Giza & Ultima Cotton", category: "Premium Cotton",
+    desc: "Premium cotton varieties for high-end textile products and discerning buyers.",
+    tags: "Pima · Giza · Ultima", icon: Globe2,
+    image: "https://threadcollective.com.au/cdn/shop/products/ashfordunmercerisedcottton.png?crop=center&height=1577&v=1680230767&width=1577"
+  },
+  {
+    no: "15", title: "High-End Application Yarns", category: "Premium Cotton",
+    desc: "Speciality yarn sourcing to support demanding applications and premium textile products.",
+    tags: "Premium applications · Speciality sourcing", icon: CheckCircle2,
+    image: "https://images.squarespace-cdn.com/content/v1/67f5d3c8e1507762e95ea8e4/62a687d7-cb76-4f8d-a7e4-ead19651a272/8-4-cotton-cone-weaving-yarn%2B%282%29.jpg"
+  },
+  {
+    no: "16", title: "Core Spun & Core Spun Slub Yarns", category: "Speciality",
+    desc: "Core-spun constructions, including slub effects, for specialised fabric requirements.",
+    tags: "Core spun · Core spun slub", icon: ShieldCheck,
+    image: "https://www.merserizeiplik.com/resimler/baslik/1-webp-1669980211.393001.jpg"
+  },
+  {
+    no: "17", title: "Polyester Yarns", category: "Synthetic",
+    desc: "Polyester yarn options for a broad range of weaving, knitting and textile production needs.",
+    tags: "Synthetic fibre · Weaving · Knitting", icon: Factory,
+    image: "https://revolutionfibers.com/cdn/shop/files/lofty-8-4-cotton-yarn-10-color-cone-transparent-background.png?v=1746585805&width=2048"
+  },
+  {
+    no: "18", title: "Polyester Viscose Yarns", category: "Blended",
+    desc: "Polyester-viscose blends for customers seeking a combination of fibre characteristics.",
+    tags: "Polyester · Viscose · Blended yarn", icon: Factory,
+    image: "https://images.squarespace-cdn.com/content/v1/67f5d3c8e1507762e95ea8e4/62a687d7-cb76-4f8d-a7e4-ead19651a272/8-4-cotton-cone-weaving-yarn%2B%282%29.jpg"
+  },
+  {
+    no: "19", title: "Modal Yarns", category: "Natural Fibres",
+    desc: "Modal fibre yarn options for soft-feel textile applications and selected fabric blends.",
+    tags: "Modal fibre · Soft feel · Blends", icon: Leaf,
+    image: "https://threadcollective.com.au/cdn/shop/products/ashfordunmercerisedcottton.png?crop=center&height=1577&v=1680230767&width=1577"
+  },
+  {
+    no: "20", title: "Flex Yarns", category: "Speciality",
+    desc: "Flex yarn options available for customers with specific textile sourcing requirements.",
+    tags: "Speciality yarn · Custom requirements", icon: CheckCircle2,
+    image: "https://muzteks.com/Content/images/2022/4/20/401-penye-compact-67d184aa.jpg"
+  },
+  {
+    no: "21", title: "Viscose Vortex Yarns", category: "Blended",
+    desc: "Vortex-spun viscose yarn options for selected spinning, weaving and knitting applications.",
+    tags: "Viscose · Vortex spinning", icon: Factory,
+    image: "https://images.squarespace-cdn.com/content/v1/67f5d3c8e1507762e95ea8e4/62a687d7-cb76-4f8d-a7e4-ead19651a272/8-4-cotton-cone-weaving-yarn%2B%282%29.jpg"
+  },
+  {
+    no: "22", title: "Tencel Yarns", category: "Sustainable",
+    desc: "Tencel fibre yarn options for customers exploring modern cellulosic textile materials.",
+    tags: "Tencel · Cellulosic fibre", icon: Leaf,
+    image: "https://threadcollective.com.au/cdn/shop/products/ashfordunmercerisedcottton.png?crop=center&height=1577&v=1680230767&width=1577"
+  },
+  {
+    no: "23", title: "Bamboo Yarns", category: "Natural Fibres",
+    desc: "Bamboo-based yarn options for selected apparel, knitting and textile applications.",
+    tags: "Bamboo fibre · Textile blends", icon: Leaf,
+    image: "https://revolutionfibers.com/cdn/shop/files/lofty-8-4-cotton-yarn-10-color-cone-transparent-background.png?v=1746585805&width=2048"
+  },
+  {
+    no: "24", title: "Organic Cotton Yarns", category: "Sustainable",
+    desc: "Organic cotton yarn options for buyers seeking fibre sourcing aligned with their requirements.",
+    tags: "Organic cotton · Responsible sourcing", icon: Leaf,
+    image: "https://muzteks.com/Content/images/2022/4/20/401-penye-compact-67d184aa.jpg"
   }
 ];
 
 const yarnRange = [
-  "Cotton (Carded, Combed & Compact)",
-  "Polyester",
-  "Polyester Viscose",
-  "Modal",
-  "Flex Yarn",
-  "Organic Yarn",
-  "Viscose Vortex",
-  "Tencel",
-  "Bamboo",
+  "Cotton (Carded / Combed & Compact)",
   "Spandex",
   "Dyed & Melange Yarn",
-  "Open-End (OE) Yarn",
-  "Eli-Twist Yarn",
+  "OE (Open-End) Yarn",
+  "Eli-Twist",
   "Gassed Yarn",
-  "Dye Package Yarn",
+  "Dye Package",
   "Slub Yarn",
-  "Ply Yarn"
+  "Ply Yarn",
+  "Sustainable Yarns",
+  "Fancy Yarns",
+  "Blended Yarns",
+  "Combed Gassed Mercerised Yarn",
+  "Pima / Giza / Ultima",
+  "High-End Use Yarn",
+  "Core Spun Yarn & Core Spun Slub Yarn",
+  "Polyester Yarns",
+  "Polyester Viscose Yarns",
+  "Modal Yarns",
+  "Flex Yarns",
+  "Viscose Vortex Yarns",
+  "Tencel Yarns",
+  "Bamboo Yarns",
+  "Organic Cotton Yarns"
 ];
 
 const categories = [
   "All",
+  "Cotton",
+  "Synthetic",
   "Sustainable",
   "Fancy",
   "Blended",
   "Premium Cotton",
+  "Natural Fibres",
   "Speciality"
 ];
 
@@ -279,7 +379,7 @@ Message: ${form.message}`
             <span>Years of Experience</span>
           </div>
           <div>
-            <strong>17+</strong>
+            <strong>24+</strong>
             <span>Yarn Varieties</span>
           </div>
           <div>
